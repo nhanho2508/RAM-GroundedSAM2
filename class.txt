@@ -1,0 +1,1 @@
+additional_class = ["hair", "eye", "nose", "lips", "teeth", "ear", "glasses", "face", "mouth", "eyebrow"]

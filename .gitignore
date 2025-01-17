@@ -1,0 +1,6 @@
+venv/
+export
+errors.log
+infer_dir.py
+segment_to_edge.py
+outputs/

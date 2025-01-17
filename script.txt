@@ -1,0 +1,5 @@
+python infer_segment_edge.py --source-folder C:\Users\ADMIN\Downloads\Places2_1\test_256 --target-folder outputs/grounded_sam2_dir_demo --kernel-size 7 --min-threshold 20 --max-threshold 50
+python infer_segment_edge.py --source-folder C:\Users\ADMIN\Downloads\FFHQ --target-folder outputs/grounded_sam2_dir_demo --kernel-size 9 --min-threshold 5 --max-threshold 10
+
+FFHQ: kernel size (7), min threshold (5), max threshold (10)
+Places, ImageNet: kernel size (7), min threshold (20), max threshold (50)
