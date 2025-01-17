@@ -65,6 +65,17 @@ pip install --no-build-isolation -e grounding_dino --config-settings editable_mo
 ```
 
 ### Inference Segmentation and Edge Detection
+Trong file infer_segment_edge.py, dùng absolute path tương ứng với các checkpoint tương ứng
+```bash
+SAM2_CHECKPOINT = "C:/Users/ADMIN/source/repos/RAM+GroundedSAM2/Grounded_SAM_2/checkpoints/sam2.1_hiera_large.pt"
+SAM2_MODEL_CONFIG = "C:/Users/ADMIN/source/repos/RAM+GroundedSAM2/Grounded_SAM_2/sam2/configs/sam2.1/sam2.1_hiera_l.yaml"
+GROUNDING_DINO_CONFIG = "C:/Users/ADMIN/source/repos/RAM+GroundedSAM2/Grounded_SAM_2/grounding_dino/groundingdino/config/GroundingDINO_SwinT_OGC.py"
+GROUNDING_DINO_CHECKPOINT = "C:/Users/ADMIN/source/repos/RAM+GroundedSAM2/Grounded_SAM_2/gdino_checkpoints/groundingdino_swint_ogc.pth"
+```
+```bash
+model_ram = ram_plus(pretrained='C:/Users/ADMIN/Downloads/ram_plus_swin_large_14m.pth', image_size=IMAGE_SIZE, vit='swin_l')
+```
+
 With Places2, ImageNet Dataset
 ```bash
 python infer_segment_edge.py --source-folder C:\Users\ADMIN\Downloads\Places2_1\test_256 --target-folder outputs/grounded_sam2_dir_demo --kernel-size 7 --min-threshold 20 --max-threshold 50
