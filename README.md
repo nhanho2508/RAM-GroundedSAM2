@@ -65,12 +65,15 @@ pip install --no-build-isolation -e grounding_dino --config-settings editable_mo
 ```
 
 ### Inference Segmentation and Edge Detection
+With Places2, ImageNet Dataset
 ```bash
 python infer_segment_edge.py --source-folder C:\Users\ADMIN\Downloads\Places2_1\test_256 --target-folder outputs/grounded_sam2_dir_demo --kernel-size 7 --min-threshold 20 --max-threshold 50
 ```
+With FFHQ Dataset
 ```bash
 python infer_segment_edge.py --source-folder C:\Users\ADMIN\Downloads\FFHQ --target-folder outputs/grounded_sam2_dir_demo --kernel-size 7 --min-threshold 5 --max-threshold 10
 ```
+
 --kernel-size: Size of Median kernel
 --max-threshold , --min-threshold: Threshold of Canny Edge Detection
 
