@@ -17,7 +17,7 @@ cd recognize-anything
 pip install -e .
 ```
 
-### **Setting Up RAM - Grounded - SAM -2** ###
+### **Setting Up Grounded - SAM -2** ###
 #### Installation
 0. Di chuyển đến folder Grounded_SAM_2
 1. Download the pretrained `SAM 2` checkpoints:
