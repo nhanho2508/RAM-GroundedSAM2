@@ -1,7 +1,8 @@
 
 ### **Setting Up RAM - Recognize Anything** ###
 0. Link Checkpoint: https://huggingface.co/xinyu1205/recognize-anything-plus-model/blob/main/ram_plus_swin_large_14m.pth
-1. Create and activate a Conda environment:
+1. Di chuyển đến folder recognize_anything
+2. Create and activate a Conda environment:
 
 ```bash
 conda create -n recognize-anything python=3.8 -y
@@ -9,7 +10,7 @@ conda activate recognize-anything
 ```
 
 
-2. Or, for development, you may build from source:
+3. Or, for development, you may build from source:
 
 ```bash
 git clone https://github.com/xinyu1205/recognize-anything.git
